@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: clickhouse_raw
+    schema: default
+    tables:
+      - name: obs_spans
+      - name: obs_events

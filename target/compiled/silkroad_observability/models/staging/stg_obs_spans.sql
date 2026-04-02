@@ -1,0 +1,20 @@
+select
+    ts,
+    toDate(ts) as event_date,
+    toStartOfHour(ts) as event_hour,
+    toStartOfMinute(ts) as event_minute,
+    toStartOfFifteenMinutes(ts) as event_15m,
+    trace_id,
+    span_id,
+    parent_span_id,
+    name,
+    request_kind,
+    status,
+    duration_ms,
+    err_class,
+    critical,
+    char_id,
+    account_id,
+    result_code,
+    attrs
+from `default`.`obs_spans`

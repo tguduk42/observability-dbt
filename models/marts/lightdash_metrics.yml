@@ -1,0 +1,183 @@
+version: 2
+
+models:
+  - name: agg_error_summary_1h
+    description: "Son 1 saat hata özeti"
+    columns:
+      - name: name
+      - name: err_class
+      - name: total
+        meta:
+          metrics:
+            total_rows:
+              type: sum
+              label: Total Rows
+      - name: errors
+        meta:
+          metrics:
+            total_errors:
+              type: sum
+              label: Total Errors
+      - name: error_pct
+        meta:
+          metrics:
+            avg_error_pct:
+              type: average
+              label: Avg Error %
+      - name: avg_ms
+        meta:
+          metrics:
+            avg_duration_ms:
+              type: average
+              label: Avg Duration ms
+      - name: max_ms
+        meta:
+          metrics:
+            max_duration_ms:
+              type: max
+              label: Max Duration ms
+
+  - name: agg_slow_spans_1h
+    description: "Son 1 saat yavaş span'lar"
+    columns:
+      - name: name
+      - name: request_kind
+      - name: calls
+        meta:
+          metrics:
+            total_calls:
+              type: sum
+              label: Total Calls
+      - name: avg_ms
+        meta:
+          metrics:
+            avg_ms:
+              type: average
+      - name: p95_ms
+        meta:
+          metrics:
+            avg_p95_ms:
+              type: average
+              label: Avg P95 ms
+      - name: p99_ms
+        meta:
+          metrics:
+            avg_p99_ms:
+              type: average
+              label: Avg P99 ms
+      - name: max_ms
+        meta:
+          metrics:
+            max_ms:
+              type: max
+
+  - name: agg_critical_logs_30m
+    description: "Son 30 dakika kritik loglar"
+    columns:
+      - name: ts
+      - name: name
+      - name: char_id
+      - name: account_id
+      - name: err_class
+      - name: result_code
+      - name: attrs
+
+  - name: agg_opcode_volume_24h
+    description: "Son 24 saat opcode/request hacmi"
+    columns:
+      - name: bucket
+      - name: request_kind
+      - name: total
+        meta:
+          metrics:
+            total_requests:
+              type: sum
+              label: Total Requests
+      - name: errors
+        meta:
+          metrics:
+            total_request_errors:
+              type: sum
+              label: Total Request Errors
+
+  - name: agg_exchange_funnel_24h
+    description: "Son 24 saat exchange funnel"
+    columns:
+      - name: started
+        meta:
+          metrics:
+            started_total:
+              type: sum
+      - name: confirmed
+        meta:
+          metrics:
+            confirmed_total:
+              type: sum
+      - name: completed
+        meta:
+          metrics:
+            completed_total:
+              type: sum
+      - name: cancelled
+        meta:
+          metrics:
+            cancelled_total:
+              type: sum
+
+  - name: agg_exchange_fail_reasons_24h
+    description: "Son 24 saat exchange fail reason"
+    columns:
+      - name: name
+      - name: reason
+      - name: code
+      - name: cnt
+        meta:
+          metrics:
+            fail_count:
+              type: sum
+
+  - name: agg_exchange_top_characters_today
+    description: "Bugün en aktif trade karakterleri"
+    columns:
+      - name: char_id
+      - name: trades_initiated
+        meta:
+          metrics:
+            trades_initiated_total:
+              type: sum
+      - name: trades_completed
+        meta:
+          metrics:
+            trades_completed_total:
+              type: sum
+
+  - name: agg_online_characters_6h
+    description: "Son 6 saat online karakterler"
+    columns:
+      - name: bucket
+      - name: online_chars
+        meta:
+          metrics:
+            online_chars_value:
+              type: average
+              label: Online Characters
+
+  - name: agg_potion_rejects_24h
+    description: "Son 24 saat potion reject"
+    columns:
+      - name: hour
+      - name: rejected
+        meta:
+          metrics:
+            rejected_total:
+              type: sum
+      - name: unique_chars
+        meta:
+          metrics:
+            affected_chars:
+              type: sum
+      - name: avg_handler_ms
+        meta:
+          metrics:
+            avg_handler_ms_metric:
+              type: average

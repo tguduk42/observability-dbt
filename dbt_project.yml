@@ -1,0 +1,10 @@
+name: silkroad_observability
+version: '1.0.0'
+config-version: 2
+profile: silkroad_observability
+model-paths: ["models"]
+models:
+  silkroad_observability:
+    +materialized: view
+    marts:
+      +materialized: table
