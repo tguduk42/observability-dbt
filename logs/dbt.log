@@ -8412,3 +8412,1802 @@ drop table if exists `default`.`trace_drilldown_candidates_1h__dbt_backup`
 [0m15:21:50.824931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b34553ff3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b34551cd910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b3459b87bd0>]}
 [0m15:21:50.826445 [debug] [MainThread]: Flushing usage events
 [0m15:21:51.765137 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:29:39.142257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293aaaed10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293b7333d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293a86f610>]}
+
+
+============================== 16:29:39.148782 | 3e831355-3653-46ac-9288-816144264cc8 ==============================
+[0m16:29:39.148782 [info ] [MainThread]: Running with dbt=1.11.7
+[0m16:29:39.150731 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'target_path': 'None', 'printer_width': '80', 'log_format': 'default', 'warn_error': 'None', 'empty': 'False', 'static_parser': 'True', 'introspect': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'fail_fast': 'False', 'profiles_dir': '/usr/app', 'use_experimental_parser': 'False', 'version_check': 'True', 'invocation_command': 'dbt run', 'partial_parse': 'True', 'quiet': 'False', 'write_json': 'True', 'log_path': '/usr/app/logs', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'debug': 'False'}
+[0m16:29:39.348416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293a8604d0>]}
+[0m16:29:39.411944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293ae58dd0>]}
+[0m16:29:39.414137 [info ] [MainThread]: Registered adapter: clickhouse=1.9.8
+[0m16:29:39.500248 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m16:29:39.794766 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 14 files changed.
+[0m16:29:39.796504 [debug] [MainThread]: Partial parsing: added file: silkroad_observability://models/marts/list_exchange_characters_24h.sql
+[0m16:29:39.798232 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/lightdash_metrics.yml
+[0m16:29:39.799638 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_exchange_top_characters_today.sql
+[0m16:29:39.801087 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_opcode_volume_24h.sql
+[0m16:29:39.802697 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_online_characters_6h.sql
+[0m16:29:39.804147 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_slow_spans_1h.sql
+[0m16:29:39.805398 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_character_activity_2h.sql
+[0m16:29:39.806520 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_exchange_funnel_24h.sql
+[0m16:29:39.807771 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_error_class_today.sql
+[0m16:29:39.809016 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_critical_logs_30m.sql
+[0m16:29:39.810109 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_character_events_2h.sql
+[0m16:29:39.811247 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_error_summary_1h.sql
+[0m16:29:39.812358 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/trace_drilldown_candidates_1h.sql
+[0m16:29:39.813435 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_exchange_fail_reasons_24h.sql
+[0m16:29:39.814774 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/agg_potion_rejects_24h.sql
+[0m16:29:40.357192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293aecb750>]}
+[0m16:29:40.458100 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/target/manifest.json
+[0m16:29:40.474271 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/target/semantic_manifest.json
+[0m16:29:40.541335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2938e4ff10>]}
+[0m16:29:40.543008 [info ] [MainThread]: Found 16 models, 2 sources, 486 macros
+[0m16:29:40.544813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293a9c6110>]}
+[0m16:29:40.548069 [info ] [MainThread]: 
+[0m16:29:40.549801 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:29:40.551648 [info ] [MainThread]: 
+[0m16:29:40.553622 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m16:29:40.563592 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m16:29:40.576096 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:29:41.969857 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m16:29:42.105406 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.13 seconds
+[0m16:29:42.170425 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__default)
+[0m16:29:42.177870 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__default: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "connection_name": "list__default"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'default'
+      
+
+  ...
+[0m16:29:42.290297 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:42.295275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293a10ef10>]}
+[0m16:29:42.301331 [debug] [Thread-1 (]: Began running node model.silkroad_observability.stg_obs_events
+[0m16:29:42.302798 [info ] [Thread-1 (]: 1 of 16 START sql view model `default`.`stg_obs_events` ........................ [RUN]
+[0m16:29:42.304171 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__default, now model.silkroad_observability.stg_obs_events)
+[0m16:29:42.305639 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.stg_obs_events
+[0m16:29:42.313252 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.stg_obs_events"
+[0m16:29:42.328247 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.stg_obs_events
+[0m16:29:42.367766 [debug] [Thread-1 (]: Relation stg_obs_events already exists, replacing it
+[0m16:29:42.382298 [debug] [Thread-1 (]: Model mvs to replace ['stg_obs_events_mv']
+[0m16:29:42.386001 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.stg_obs_events: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.stg_obs_events"} */
+
+    
+    select name
+    from system.tables
+    where engine = 'MaterializedView'
+      and extract(create_table_query, 'TO\\s+([^\\s(]+)') = 'default.stg_obs_events'
+  
+  ...
+[0m16:29:53.144380 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 10.76 seconds
+[0m16:29:53.146614 [debug] [Thread-1 (]: Current mvs found in ClickHouse are: 
+[0m16:29:42.127955 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.stg_obs_events"
+[0m16:29:42.145883 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.stg_obs_events: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.stg_obs_events"} */
+
+
+  create or replace view `default`.`stg_obs_events` 
+  
+    
+  
+  
+    
+    
+  as (
+    select
+    ts,
+    toDate(ts) as event_date,
+    toStartOfHour(ts) as event_hour,
+    trace_id,
+    span_id,
+    name,
+    level,
+    attrs
+from `default`.`obs_events`
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m16:29:42.252945 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:42.275842 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2938f98090>]}
+[0m16:29:42.277666 [info ] [Thread-1 (]: 1 of 16 OK created sql view model `default`.`stg_obs_events` ................... [[32mOK[0m in -0.03s]
+[0m16:29:42.279755 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.stg_obs_events
+[0m16:29:42.281068 [debug] [Thread-1 (]: Began running node model.silkroad_observability.stg_obs_spans
+[0m16:29:42.282445 [info ] [Thread-1 (]: 2 of 16 START sql view model `default`.`stg_obs_spans` ......................... [RUN]
+[0m16:29:42.284000 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.stg_obs_events, now model.silkroad_observability.stg_obs_spans)
+[0m16:29:42.285499 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.stg_obs_spans
+[0m16:29:42.290173 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.stg_obs_spans"
+[0m16:29:42.308531 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.stg_obs_spans
+[0m16:29:42.314057 [debug] [Thread-1 (]: Relation stg_obs_spans already exists, replacing it
+[0m16:29:42.315816 [debug] [Thread-1 (]: Model mvs to replace ['stg_obs_spans_mv']
+[0m16:29:42.317793 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.stg_obs_spans: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.stg_obs_spans"} */
+
+    
+    select name
+    from system.tables
+    where engine = 'MaterializedView'
+      and extract(create_table_query, 'TO\\s+([^\\s(]+)') = 'default.stg_obs_spans'
+  
+  ...
+[0m16:29:42.420786 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:42.422966 [debug] [Thread-1 (]: Current mvs found in ClickHouse are: 
+[0m16:29:42.425630 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.stg_obs_spans"
+[0m16:29:42.440643 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.stg_obs_spans: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.stg_obs_spans"} */
+
+
+  create or replace view `default`.`stg_obs_spans` 
+  
+    
+  
+  
+    
+    
+  as (
+    select
+    ts,
+    toDate(ts) as event_date,
+    toStartOfHour(ts) as event_hour,
+    toStartOfMinute(ts) as event_minute,
+    toStartOfFifteenMinutes(ts) as event_15m,
+    trace_id,
+    span_id,
+    parent_span_id,
+    name,
+    request_kind,
+    status,
+    duration_ms,
+    err_class,
+    critical,
+    char_id,
+    account_id,
+    result_code,
+    attrs
+from `default`.`obs_spans`
+    
+  )
+      
+      
+                    -- end_of_sql
+                    
+                    ...
+[0m16:29:42.546613 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:42.550777 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2912e9f590>]}
+[0m16:29:42.552761 [info ] [Thread-1 (]: 2 of 16 OK created sql view model `default`.`stg_obs_spans` .................... [[32mOK[0m in 0.27s]
+[0m16:29:42.555263 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.stg_obs_spans
+[0m16:29:42.557315 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_exchange_fail_reasons_24h
+[0m16:29:42.559024 [info ] [Thread-1 (]: 3 of 16 START sql table model `default`.`agg_exchange_fail_reasons_24h` ........ [RUN]
+[0m16:29:42.560285 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.stg_obs_spans, now model.silkroad_observability.agg_exchange_fail_reasons_24h)
+[0m16:29:42.561625 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_exchange_fail_reasons_24h
+[0m16:29:42.565427 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_exchange_fail_reasons_24h"
+[0m16:29:42.585803 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_exchange_fail_reasons_24h
+[0m16:29:42.640475 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_fail_reasons_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_fail_reasons_24h"} */
+
+            
+
+    
+        create table `default`.`agg_exchange_fail_reasons_24h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    name,
+    JSONExtractString(attrs, 'reason') as reason,
+    JSONExtractString(attrs, 'code') as code,
+    count() as cnt
+from `default`.`stg_obs_events`
+where name like 'exchange_%_fail'
+group by name, reason, code
+          )
+        
+        ...
+[0m16:29:42.750787 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:42.768322 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_fail_reasons_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_fail_reasons_24h"} */
+
+    select name, type from system.columns where table = 'agg_exchange_fail_reasons_24h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:42.891620 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:29:42.903134 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_exchange_fail_reasons_24h"
+[0m16:29:42.930282 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_fail_reasons_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_fail_reasons_24h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_exchange_fail_reasons_24h__dbt_backup`
+        ("name", "reason", "code", "cnt")
+
+select
+    name,
+    JSONExtractString(attrs, 'reason') as reason,
+    JSONExtractString(attrs, 'code') as code,
+    count() as cnt
+from `default`.`stg_obs_events`
+where name like 'exchange_%_fail'
+group by name, reason, code
+  ...
+[0m16:29:43.035161 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:43.040262 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_fail_reasons_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_fail_reasons_24h"} */
+EXCHANGE TABLES `default`.`agg_exchange_fail_reasons_24h__dbt_backup` AND `default`.`agg_exchange_fail_reasons_24h` 
+  
+  ...
+[0m16:29:43.140913 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:43.148639 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_fail_reasons_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_fail_reasons_24h"} */
+drop table if exists `default`.`agg_exchange_fail_reasons_24h__dbt_backup` 
+  ...
+[0m16:29:43.248254 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:43.250951 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b29114ff010>]}
+[0m16:29:43.252709 [info ] [Thread-1 (]: 3 of 16 OK created sql table model `default`.`agg_exchange_fail_reasons_24h` ... [[32mOK[0m in 0.69s]
+[0m16:29:43.254468 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_exchange_fail_reasons_24h
+[0m16:29:43.255758 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_exchange_funnel_24h
+[0m16:29:43.257104 [info ] [Thread-1 (]: 4 of 16 START sql table model `default`.`agg_exchange_funnel_24h` .............. [RUN]
+[0m16:29:43.259015 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_exchange_fail_reasons_24h, now model.silkroad_observability.agg_exchange_funnel_24h)
+[0m16:29:43.260389 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_exchange_funnel_24h
+[0m16:29:43.264288 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_exchange_funnel_24h"
+[0m16:29:43.281578 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_exchange_funnel_24h
+[0m16:29:43.289919 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_funnel_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_funnel_24h"} */
+
+            
+
+    
+        create table `default`.`agg_exchange_funnel_24h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    countIf(name = 'exchange_start_ok') as started,
+    countIf(name = 'exchange_confirm_ok') as confirmed,
+    countIf(name = 'exchange_approve_ok'
+            and JSONExtractBool(attrs, 'completed') = true) as completed,
+    countIf(name like 'exchange_%_fail'
+         or name = 'exchange_cancel_ok') as cancelled
+from `default`.`stg_obs_events`
+          )
+        
+        ...
+[0m16:29:54.319970 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 11.03 seconds
+[0m16:29:54.323755 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_funnel_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_funnel_24h"} */
+
+    select name, type from system.columns where table = 'agg_exchange_funnel_24h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:43.395689 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in -10.93 seconds
+[0m16:29:43.398878 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_exchange_funnel_24h"
+[0m16:29:43.416873 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_funnel_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_funnel_24h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_exchange_funnel_24h__dbt_backup`
+        ("started", "confirmed", "completed", "cancelled")
+
+select
+    countIf(name = 'exchange_start_ok') as started,
+    countIf(name = 'exchange_confirm_ok') as confirmed,
+    countIf(name = 'exchange_approve_ok'
+            and JSONExtractBool(attrs, 'completed') = true) as completed,
+    countIf(name like 'exchange_%_fail'
+         or name = 'exchange_cancel_ok') as cancelled
+from `default`.`stg_obs_events`
+  ...
+[0m16:29:43.526605 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:43.529235 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_funnel_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_funnel_24h"} */
+EXCHANGE TABLES `default`.`agg_exchange_funnel_24h__dbt_backup` AND `default`.`agg_exchange_funnel_24h` 
+  
+  ...
+[0m16:29:43.632261 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:43.637412 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_funnel_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_funnel_24h"} */
+drop table if exists `default`.`agg_exchange_funnel_24h__dbt_backup` 
+  ...
+[0m16:29:43.741461 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:43.745334 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2911553c90>]}
+[0m16:29:43.747915 [info ] [Thread-1 (]: 4 of 16 OK created sql table model `default`.`agg_exchange_funnel_24h` ......... [[32mOK[0m in 0.49s]
+[0m16:29:43.750812 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_exchange_funnel_24h
+[0m16:29:43.752733 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_character_activity_2h
+[0m16:29:43.754840 [info ] [Thread-1 (]: 5 of 16 START sql table model `default`.`agg_character_activity_2h` ............ [RUN]
+[0m16:29:43.758414 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_exchange_funnel_24h, now model.silkroad_observability.agg_character_activity_2h)
+[0m16:29:43.761135 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_character_activity_2h
+[0m16:29:43.767687 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_character_activity_2h"
+[0m16:29:43.829986 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_character_activity_2h
+[0m16:29:43.859689 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_activity_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_activity_2h"} */
+
+            
+
+    
+        create table `default`.`agg_character_activity_2h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    ts,
+    char_id,
+    name,
+    request_kind,
+    status,
+    duration_ms,
+    err_class,
+    attrs
+from `default`.`stg_obs_spans`
+where char_id > 0
+          )
+        
+        ...
+[0m16:29:43.975922 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:43.980952 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_activity_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_activity_2h"} */
+
+    select name, type from system.columns where table = 'agg_character_activity_2h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:44.086087 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:44.090591 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_character_activity_2h"
+[0m16:29:44.110615 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_activity_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_activity_2h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_character_activity_2h__dbt_backup`
+        ("ts", "char_id", "name", "request_kind", "status", "duration_ms", "err_class", "attrs")
+
+select
+    ts,
+    char_id,
+    name,
+    request_kind,
+    status,
+    duration_ms,
+    err_class,
+    attrs
+from `default`.`stg_obs_spans`
+where char_id > 0
+  ...
+[0m16:29:44.318961 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.21 seconds
+[0m16:29:44.321229 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_activity_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_activity_2h"} */
+EXCHANGE TABLES `default`.`agg_character_activity_2h__dbt_backup` AND `default`.`agg_character_activity_2h` 
+  
+  ...
+[0m16:29:44.424827 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:44.429654 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_activity_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_activity_2h"} */
+drop table if exists `default`.`agg_character_activity_2h__dbt_backup` 
+  ...
+[0m16:29:44.530361 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:44.533100 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293b9d8190>]}
+[0m16:29:44.534913 [info ] [Thread-1 (]: 5 of 16 OK created sql table model `default`.`agg_character_activity_2h` ....... [[32mOK[0m in 0.77s]
+[0m16:29:44.536634 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_character_activity_2h
+[0m16:29:44.537836 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_character_events_2h
+[0m16:29:44.539337 [info ] [Thread-1 (]: 6 of 16 START sql table model `default`.`agg_character_events_2h` .............. [RUN]
+[0m16:29:44.540814 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_character_activity_2h, now model.silkroad_observability.agg_character_events_2h)
+[0m16:29:44.542220 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_character_events_2h
+[0m16:29:44.546423 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_character_events_2h"
+[0m16:29:44.561848 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_character_events_2h
+[0m16:29:44.567376 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_events_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_events_2h"} */
+
+            
+
+    
+        create table `default`.`agg_character_events_2h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    e.ts,
+    s.char_id,
+    e.name,
+    e.level,
+    e.attrs
+from `default`.`stg_obs_events` e
+inner join `default`.`stg_obs_spans` s on s.span_id = e.span_id
+where s.char_id > 0
+          )
+        
+        ...
+[0m16:29:44.678761 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:44.687521 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_events_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_events_2h"} */
+
+    select name, type from system.columns where table = 'agg_character_events_2h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:44.801131 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:44.804161 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_character_events_2h"
+[0m16:29:44.821622 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_events_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_events_2h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_character_events_2h__dbt_backup`
+        ("ts", "char_id", "name", "level", "attrs")
+
+select
+    e.ts,
+    s.char_id,
+    e.name,
+    e.level,
+    e.attrs
+from `default`.`stg_obs_events` e
+inner join `default`.`stg_obs_spans` s on s.span_id = e.span_id
+where s.char_id > 0
+  ...
+[0m16:29:44.964848 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.14 seconds
+[0m16:29:44.967123 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_events_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_events_2h"} */
+EXCHANGE TABLES `default`.`agg_character_events_2h__dbt_backup` AND `default`.`agg_character_events_2h` 
+  
+  ...
+[0m16:29:45.067491 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:45.072079 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_character_events_2h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_character_events_2h"} */
+drop table if exists `default`.`agg_character_events_2h__dbt_backup` 
+  ...
+[0m16:29:45.180694 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:45.184055 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2911582d50>]}
+[0m16:29:45.185705 [info ] [Thread-1 (]: 6 of 16 OK created sql table model `default`.`agg_character_events_2h` ......... [[32mOK[0m in 0.64s]
+[0m16:29:45.187580 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_character_events_2h
+[0m16:29:45.189616 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_critical_logs_30m
+[0m16:29:45.194357 [info ] [Thread-1 (]: 7 of 16 START sql table model `default`.`agg_critical_logs_30m` ................ [RUN]
+[0m16:29:45.196182 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_character_events_2h, now model.silkroad_observability.agg_critical_logs_30m)
+[0m16:29:45.197594 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_critical_logs_30m
+[0m16:29:45.201829 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_critical_logs_30m"
+[0m16:29:45.220789 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_critical_logs_30m
+[0m16:29:45.228058 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_critical_logs_30m: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_critical_logs_30m"} */
+
+            
+
+    
+        create table `default`.`agg_critical_logs_30m__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    ts,
+    name,
+    char_id,
+    account_id,
+    err_class,
+    result_code,
+    attrs
+from `default`.`stg_obs_spans`
+where critical = true
+          )
+        
+        ...
+[0m16:29:45.338654 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:45.344099 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_critical_logs_30m: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_critical_logs_30m"} */
+
+    select name, type from system.columns where table = 'agg_critical_logs_30m__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:45.446970 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:45.450035 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_critical_logs_30m"
+[0m16:29:45.466121 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_critical_logs_30m: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_critical_logs_30m"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_critical_logs_30m__dbt_backup`
+        ("ts", "name", "char_id", "account_id", "err_class", "result_code", "attrs")
+
+select
+    ts,
+    name,
+    char_id,
+    account_id,
+    err_class,
+    result_code,
+    attrs
+from `default`.`stg_obs_spans`
+where critical = true
+  ...
+[0m16:29:45.671466 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.20 seconds
+[0m16:29:45.673611 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_critical_logs_30m: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_critical_logs_30m"} */
+EXCHANGE TABLES `default`.`agg_critical_logs_30m__dbt_backup` AND `default`.`agg_critical_logs_30m` 
+  
+  ...
+[0m16:29:45.777044 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:45.781863 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_critical_logs_30m: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_critical_logs_30m"} */
+drop table if exists `default`.`agg_critical_logs_30m__dbt_backup` 
+  ...
+[0m16:29:45.888570 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:45.891455 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b29115833d0>]}
+[0m16:29:45.893004 [info ] [Thread-1 (]: 7 of 16 OK created sql table model `default`.`agg_critical_logs_30m` ........... [[32mOK[0m in 0.70s]
+[0m16:29:45.894758 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_critical_logs_30m
+[0m16:29:45.895982 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_error_class_today
+[0m16:29:45.897539 [info ] [Thread-1 (]: 8 of 16 START sql table model `default`.`agg_error_class_today` ................ [RUN]
+[0m16:29:45.899369 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_critical_logs_30m, now model.silkroad_observability.agg_error_class_today)
+[0m16:29:45.900623 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_error_class_today
+[0m16:29:45.904907 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_error_class_today"
+[0m16:29:45.924530 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_error_class_today
+[0m16:29:45.930388 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_class_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_class_today"} */
+
+            
+
+    
+        create table `default`.`agg_error_class_today__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    err_class,
+    count() as total
+from `default`.`stg_obs_spans`
+where err_class != ''
+group by err_class
+          )
+        
+        ...
+[0m16:29:46.037414 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:46.042282 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_class_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_class_today"} */
+
+    select name, type from system.columns where table = 'agg_error_class_today__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:46.145333 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:46.147964 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_error_class_today"
+[0m16:29:46.163181 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_class_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_class_today"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_error_class_today__dbt_backup`
+        ("err_class", "total")
+
+select
+    err_class,
+    count() as total
+from `default`.`stg_obs_spans`
+where err_class != ''
+group by err_class
+  ...
+[0m16:29:46.274209 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:46.276359 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_class_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_class_today"} */
+EXCHANGE TABLES `default`.`agg_error_class_today__dbt_backup` AND `default`.`agg_error_class_today` 
+  
+  ...
+[0m16:29:46.379969 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:46.385673 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_class_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_class_today"} */
+drop table if exists `default`.`agg_error_class_today__dbt_backup` 
+  ...
+[0m16:29:46.487564 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:46.490661 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b29115b2390>]}
+[0m16:29:46.492599 [info ] [Thread-1 (]: 8 of 16 OK created sql table model `default`.`agg_error_class_today` ........... [[32mOK[0m in 0.59s]
+[0m16:29:46.494475 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_error_class_today
+[0m16:29:46.495645 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_error_summary_1h
+[0m16:29:46.496877 [info ] [Thread-1 (]: 9 of 16 START sql table model `default`.`agg_error_summary_1h` ................. [RUN]
+[0m16:29:46.498365 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_error_class_today, now model.silkroad_observability.agg_error_summary_1h)
+[0m16:29:46.499730 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_error_summary_1h
+[0m16:29:46.506476 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_error_summary_1h"
+[0m16:29:46.525240 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_error_summary_1h
+[0m16:29:46.530667 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_summary_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_summary_1h"} */
+
+            
+
+    
+        create table `default`.`agg_error_summary_1h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    name,
+    err_class,
+    count() as total,
+    countIf(status = 'error') as errors,
+    round(countIf(status = 'error') / count() * 100, 2) as error_pct,
+    round(avg(duration_ms), 1) as avg_ms,
+    max(duration_ms) as max_ms
+from `default`.`stg_obs_spans`
+where status = 'error'
+group by name, err_class
+          )
+        
+        ...
+[0m16:29:46.639275 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:46.643091 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_summary_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_summary_1h"} */
+
+    select name, type from system.columns where table = 'agg_error_summary_1h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:46.746493 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:46.749451 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_error_summary_1h"
+[0m16:29:46.767297 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_summary_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_summary_1h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_error_summary_1h__dbt_backup`
+        ("name", "err_class", "total", "errors", "error_pct", "avg_ms", "max_ms")
+
+select
+    name,
+    err_class,
+    count() as total,
+    countIf(status = 'error') as errors,
+    round(countIf(status = 'error') / count() * 100, 2) as error_pct,
+    round(avg(duration_ms), 1) as avg_ms,
+    max(duration_ms) as max_ms
+from `default`.`stg_obs_spans`
+where status = 'error'
+group by name, err_class
+  ...
+[0m16:29:46.890199 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:29:46.892508 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_summary_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_summary_1h"} */
+EXCHANGE TABLES `default`.`agg_error_summary_1h__dbt_backup` AND `default`.`agg_error_summary_1h` 
+  
+  ...
+[0m16:29:46.992357 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:46.997529 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_error_summary_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_error_summary_1h"} */
+drop table if exists `default`.`agg_error_summary_1h__dbt_backup` 
+  ...
+[0m16:29:47.098633 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:47.101373 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2912ef2010>]}
+[0m16:29:47.103230 [info ] [Thread-1 (]: 9 of 16 OK created sql table model `default`.`agg_error_summary_1h` ............ [[32mOK[0m in 0.60s]
+[0m16:29:47.104930 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_error_summary_1h
+[0m16:29:47.106545 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_exchange_top_characters_today
+[0m16:29:47.108024 [info ] [Thread-1 (]: 10 of 16 START sql table model `default`.`agg_exchange_top_characters_today` ... [RUN]
+[0m16:29:47.109576 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_error_summary_1h, now model.silkroad_observability.agg_exchange_top_characters_today)
+[0m16:29:47.110759 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_exchange_top_characters_today
+[0m16:29:47.114668 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_exchange_top_characters_today"
+[0m16:29:47.133795 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_exchange_top_characters_today
+[0m16:29:47.138631 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_top_characters_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_top_characters_today"} */
+
+            
+
+    
+        create table `default`.`agg_exchange_top_characters_today__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    char_id,
+    countIf(name = 'exchange_start_ok') as trades_initiated,
+    countIf(name = 'exchange_approve_ok'
+            and JSONExtractBool(attrs, 'completed') = true) as trades_completed
+from `default`.`stg_obs_spans`
+where name like 'exchange_%'
+group by char_id
+          )
+        
+        ...
+[0m16:29:47.262036 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:29:47.266217 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_top_characters_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_top_characters_today"} */
+
+    select name, type from system.columns where table = 'agg_exchange_top_characters_today__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:47.370123 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:47.373420 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_exchange_top_characters_today"
+[0m16:29:47.388810 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_top_characters_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_top_characters_today"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_exchange_top_characters_today__dbt_backup`
+        ("char_id", "trades_initiated", "trades_completed")
+
+select
+    char_id,
+    countIf(name = 'exchange_start_ok') as trades_initiated,
+    countIf(name = 'exchange_approve_ok'
+            and JSONExtractBool(attrs, 'completed') = true) as trades_completed
+from `default`.`stg_obs_spans`
+where name like 'exchange_%'
+group by char_id
+  ...
+[0m16:29:47.525954 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.14 seconds
+[0m16:29:47.528230 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_top_characters_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_top_characters_today"} */
+EXCHANGE TABLES `default`.`agg_exchange_top_characters_today__dbt_backup` AND `default`.`agg_exchange_top_characters_today` 
+  
+  ...
+[0m16:29:47.628914 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:47.633379 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_exchange_top_characters_today: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_exchange_top_characters_today"} */
+drop table if exists `default`.`agg_exchange_top_characters_today__dbt_backup` 
+  ...
+[0m16:29:47.748190 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:47.750737 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2912fe9190>]}
+[0m16:29:47.752169 [info ] [Thread-1 (]: 10 of 16 OK created sql table model `default`.`agg_exchange_top_characters_today`  [[32mOK[0m in 0.64s]
+[0m16:29:47.753949 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_exchange_top_characters_today
+[0m16:29:47.755625 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_online_characters_6h
+[0m16:29:47.757359 [info ] [Thread-1 (]: 11 of 16 START sql table model `default`.`agg_online_characters_6h` ............ [RUN]
+[0m16:29:47.758928 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_exchange_top_characters_today, now model.silkroad_observability.agg_online_characters_6h)
+[0m16:29:47.760493 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_online_characters_6h
+[0m16:29:47.765672 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_online_characters_6h"
+[0m16:29:47.786581 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_online_characters_6h
+[0m16:29:47.792442 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_online_characters_6h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_online_characters_6h"} */
+
+            
+
+    
+        create table `default`.`agg_online_characters_6h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    toStartOfMinute(ts) as bucket,
+    uniqExact(char_id) as online_chars
+from `default`.`stg_obs_spans`
+where char_id > 0
+group by bucket
+          )
+        
+        ...
+[0m16:29:47.907711 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:47.911631 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_online_characters_6h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_online_characters_6h"} */
+
+    select name, type from system.columns where table = 'agg_online_characters_6h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:48.014755 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:48.017367 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_online_characters_6h"
+[0m16:29:48.034092 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_online_characters_6h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_online_characters_6h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_online_characters_6h__dbt_backup`
+        ("bucket", "online_chars")
+
+select
+    toStartOfMinute(ts) as bucket,
+    uniqExact(char_id) as online_chars
+from `default`.`stg_obs_spans`
+where char_id > 0
+group by bucket
+  ...
+[0m16:29:48.157176 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:29:48.159830 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_online_characters_6h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_online_characters_6h"} */
+EXCHANGE TABLES `default`.`agg_online_characters_6h__dbt_backup` AND `default`.`agg_online_characters_6h` 
+  
+  ...
+[0m16:29:48.268488 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:48.273148 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_online_characters_6h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_online_characters_6h"} */
+drop table if exists `default`.`agg_online_characters_6h__dbt_backup` 
+  ...
+[0m16:29:48.374071 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:48.376440 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2911582e50>]}
+[0m16:29:48.377878 [info ] [Thread-1 (]: 11 of 16 OK created sql table model `default`.`agg_online_characters_6h` ....... [[32mOK[0m in 0.62s]
+[0m16:29:48.379819 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_online_characters_6h
+[0m16:29:48.381423 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_opcode_volume_24h
+[0m16:29:48.382820 [info ] [Thread-1 (]: 12 of 16 START sql table model `default`.`agg_opcode_volume_24h` ............... [RUN]
+[0m16:29:48.384512 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_online_characters_6h, now model.silkroad_observability.agg_opcode_volume_24h)
+[0m16:29:48.385782 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_opcode_volume_24h
+[0m16:29:48.389501 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_opcode_volume_24h"
+[0m16:29:48.407011 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_opcode_volume_24h
+[0m16:29:48.411570 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_opcode_volume_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_opcode_volume_24h"} */
+
+            
+
+    
+        create table `default`.`agg_opcode_volume_24h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    toStartOfFifteenMinutes(ts) as bucket,
+    request_kind,
+    count() as total,
+    countIf(status = 'error') as errors
+from `default`.`stg_obs_spans`
+group by bucket, request_kind
+          )
+        
+        ...
+[0m16:29:48.524953 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:48.529098 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_opcode_volume_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_opcode_volume_24h"} */
+
+    select name, type from system.columns where table = 'agg_opcode_volume_24h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:48.632235 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:48.635391 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_opcode_volume_24h"
+[0m16:29:48.650692 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_opcode_volume_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_opcode_volume_24h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_opcode_volume_24h__dbt_backup`
+        ("bucket", "request_kind", "total", "errors")
+
+select
+    toStartOfFifteenMinutes(ts) as bucket,
+    request_kind,
+    count() as total,
+    countIf(status = 'error') as errors
+from `default`.`stg_obs_spans`
+group by bucket, request_kind
+  ...
+[0m16:29:59.313141 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 10.66 seconds
+[0m16:29:59.315697 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_opcode_volume_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_opcode_volume_24h"} */
+EXCHANGE TABLES `default`.`agg_opcode_volume_24h__dbt_backup` AND `default`.`agg_opcode_volume_24h` 
+  
+  ...
+[0m16:29:48.381404 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in -10.94 seconds
+[0m16:29:48.386571 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_opcode_volume_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_opcode_volume_24h"} */
+drop table if exists `default`.`agg_opcode_volume_24h__dbt_backup` 
+  ...
+[0m16:29:48.487120 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:48.489650 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b29115c8850>]}
+[0m16:29:48.491311 [info ] [Thread-1 (]: 12 of 16 OK created sql table model `default`.`agg_opcode_volume_24h` .......... [[32mOK[0m in 0.11s]
+[0m16:29:48.493360 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_opcode_volume_24h
+[0m16:29:48.495626 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_potion_rejects_24h
+[0m16:29:48.497351 [info ] [Thread-1 (]: 13 of 16 START sql table model `default`.`agg_potion_rejects_24h` .............. [RUN]
+[0m16:29:48.498991 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_opcode_volume_24h, now model.silkroad_observability.agg_potion_rejects_24h)
+[0m16:29:48.500399 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_potion_rejects_24h
+[0m16:29:48.504347 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_potion_rejects_24h"
+[0m16:29:48.521152 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_potion_rejects_24h
+[0m16:29:48.526511 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_potion_rejects_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_potion_rejects_24h"} */
+
+            
+
+    
+        create table `default`.`agg_potion_rejects_24h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    toStartOfHour(ts) as hour,
+    count() as rejected,
+    uniqExact(char_id) as unique_chars,
+    avgIf(duration_ms, status = 'error') as avg_handler_ms
+from `default`.`stg_obs_spans`
+where name = 'use'
+  and status = 'error'
+group by hour
+          )
+        
+        ...
+[0m16:29:48.633383 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:48.638517 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_potion_rejects_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_potion_rejects_24h"} */
+
+    select name, type from system.columns where table = 'agg_potion_rejects_24h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:48.741967 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:48.745062 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_potion_rejects_24h"
+[0m16:29:48.762291 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_potion_rejects_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_potion_rejects_24h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_potion_rejects_24h__dbt_backup`
+        ("hour", "rejected", "unique_chars", "avg_handler_ms")
+
+select
+    toStartOfHour(ts) as hour,
+    count() as rejected,
+    uniqExact(char_id) as unique_chars,
+    avgIf(duration_ms, status = 'error') as avg_handler_ms
+from `default`.`stg_obs_spans`
+where name = 'use'
+  and status = 'error'
+group by hour
+  ...
+[0m16:29:48.921975 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.16 seconds
+[0m16:29:48.924374 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_potion_rejects_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_potion_rejects_24h"} */
+EXCHANGE TABLES `default`.`agg_potion_rejects_24h__dbt_backup` AND `default`.`agg_potion_rejects_24h` 
+  
+  ...
+[0m16:29:49.054591 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.13 seconds
+[0m16:29:49.059635 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_potion_rejects_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_potion_rejects_24h"} */
+drop table if exists `default`.`agg_potion_rejects_24h__dbt_backup` 
+  ...
+[0m16:29:49.198336 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.14 seconds
+[0m16:29:49.200785 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2938f9a510>]}
+[0m16:29:49.202255 [info ] [Thread-1 (]: 13 of 16 OK created sql table model `default`.`agg_potion_rejects_24h` ......... [[32mOK[0m in 0.70s]
+[0m16:29:49.204079 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_potion_rejects_24h
+[0m16:29:49.205579 [debug] [Thread-1 (]: Began running node model.silkroad_observability.agg_slow_spans_1h
+[0m16:29:49.206920 [info ] [Thread-1 (]: 14 of 16 START sql table model `default`.`agg_slow_spans_1h` ................... [RUN]
+[0m16:29:49.208423 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_potion_rejects_24h, now model.silkroad_observability.agg_slow_spans_1h)
+[0m16:29:49.209647 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.agg_slow_spans_1h
+[0m16:29:49.215280 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.agg_slow_spans_1h"
+[0m16:29:49.233251 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.agg_slow_spans_1h
+[0m16:29:49.237603 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_slow_spans_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_slow_spans_1h"} */
+
+            
+
+    
+        create table `default`.`agg_slow_spans_1h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    name,
+    request_kind,
+    count() as calls,
+    round(avg(duration_ms), 1) as avg_ms,
+    quantile(0.95)(duration_ms) as p95_ms,
+    quantile(0.99)(duration_ms) as p99_ms,
+    max(duration_ms) as max_ms
+from `default`.`stg_obs_spans`
+group by name, request_kind
+having quantile(0.95)(duration_ms) > 500
+          )
+        
+        ...
+[0m16:29:49.412347 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.17 seconds
+[0m16:29:49.418360 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_slow_spans_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_slow_spans_1h"} */
+
+    select name, type from system.columns where table = 'agg_slow_spans_1h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:49.525225 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:49.528385 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.agg_slow_spans_1h"
+[0m16:29:49.545641 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_slow_spans_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_slow_spans_1h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`agg_slow_spans_1h__dbt_backup`
+        ("name", "request_kind", "calls", "avg_ms", "p95_ms", "p99_ms", "max_ms")
+
+select
+    name,
+    request_kind,
+    count() as calls,
+    round(avg(duration_ms), 1) as avg_ms,
+    quantile(0.95)(duration_ms) as p95_ms,
+    quantile(0.99)(duration_ms) as p99_ms,
+    max(duration_ms) as max_ms
+from `default`.`stg_obs_spans`
+group by name, request_kind
+having quantile(0.95)(duration_ms) > 500
+  ...
+[0m16:29:49.669224 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:29:49.671586 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_slow_spans_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_slow_spans_1h"} */
+EXCHANGE TABLES `default`.`agg_slow_spans_1h__dbt_backup` AND `default`.`agg_slow_spans_1h` 
+  
+  ...
+[0m16:29:49.775053 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:29:49.780691 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.agg_slow_spans_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.agg_slow_spans_1h"} */
+drop table if exists `default`.`agg_slow_spans_1h__dbt_backup` 
+  ...
+[0m16:29:49.941367 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.16 seconds
+[0m16:29:49.958648 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2912ef31d0>]}
+[0m16:29:49.961166 [info ] [Thread-1 (]: 14 of 16 OK created sql table model `default`.`agg_slow_spans_1h` .............. [[32mOK[0m in 0.75s]
+[0m16:29:49.963917 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.agg_slow_spans_1h
+[0m16:29:49.965817 [debug] [Thread-1 (]: Began running node model.silkroad_observability.list_exchange_characters_24h
+[0m16:29:49.967752 [info ] [Thread-1 (]: 15 of 16 START sql table model `default`.`list_exchange_characters_24h` ........ [RUN]
+[0m16:29:49.969894 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.agg_slow_spans_1h, now model.silkroad_observability.list_exchange_characters_24h)
+[0m16:29:49.972019 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.list_exchange_characters_24h
+[0m16:29:49.977044 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.list_exchange_characters_24h"
+[0m16:29:50.045586 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.list_exchange_characters_24h
+[0m16:29:50.054102 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+
+            
+
+    
+        create table `default`.`list_exchange_characters_24h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    char_id,
+    countIf(name = 'exchange_start_ok') as trades_started,
+    countIf(name = 'exchange_confirm_ok') as trades_confirmed,
+    countIf(
+        name = 'exchange_approve_ok'
+        and JSONExtractBool(attrs, 'completed') = true
+    ) as trades_completed,
+    max(ts) as last_exchange_at
+from `default`.`stg_obs_spans`
+where name like 'exchange_%'
+group by char_id
+having trades_started > 0
+order by trades_completed desc, trades_started desc, char_id asc
+          )
+        
+        ...
+[0m16:29:50.184886 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.13 seconds
+[0m16:29:50.189214 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+
+    select name, type from system.columns where table = 'list_exchange_characters_24h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:50.326246 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.14 seconds
+[0m16:29:50.329728 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.list_exchange_characters_24h"
+[0m16:29:50.339225 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`list_exchange_characters_24h__dbt_backup`
+        ("char_id", "trades_started", "trades_confirmed", "trades_completed", "last_exchange_at")
+
+select
+    char_id,
+    countIf(name = 'exchange_start_ok') as trades_started,
+    countIf(name = 'exchange_confirm_ok') as trades_confirmed,
+    countIf(
+        name = 'exchange_approve_ok'
+        and JSONExtractBool(attrs, 'completed') = true
+    ) as trades_completed,
+    max(ts) as last_exchange_at
+from `default`.`stg_obs_spans`
+where name like 'exchange_%'
+group by char_id
+having trades_started > 0
+order by trades_completed desc, trades_started desc, char_id asc
+  ...
+[0m16:29:50.462569 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:29:50.465691 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+EXCHANGE TABLES `default`.`list_exchange_characters_24h__dbt_backup` AND `default`.`list_exchange_characters_24h` 
+  
+  ...
+[0m16:29:50.635338 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.17 seconds
+[0m16:29:50.641626 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+drop table if exists `default`.`list_exchange_characters_24h__dbt_backup` 
+  ...
+[0m16:29:50.792963 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.15 seconds
+[0m16:29:50.795998 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b291140c850>]}
+[0m16:29:50.802269 [info ] [Thread-1 (]: 15 of 16 OK created sql table model `default`.`list_exchange_characters_24h` ... [[32mOK[0m in 0.83s]
+[0m16:29:50.804132 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.list_exchange_characters_24h
+[0m16:29:50.805429 [debug] [Thread-1 (]: Began running node model.silkroad_observability.trace_drilldown_candidates_1h
+[0m16:29:50.806651 [info ] [Thread-1 (]: 16 of 16 START sql table model `default`.`trace_drilldown_candidates_1h` ....... [RUN]
+[0m16:29:50.808107 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.silkroad_observability.list_exchange_characters_24h, now model.silkroad_observability.trace_drilldown_candidates_1h)
+[0m16:29:50.809263 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.trace_drilldown_candidates_1h
+[0m16:29:50.813456 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.trace_drilldown_candidates_1h"
+[0m16:29:50.832383 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.trace_drilldown_candidates_1h
+[0m16:29:50.839739 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.trace_drilldown_candidates_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.trace_drilldown_candidates_1h"} */
+
+            
+
+    
+        create table `default`.`trace_drilldown_candidates_1h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select distinct
+    trace_id,
+    ts,
+    name,
+    char_id,
+    status
+from `default`.`stg_obs_spans`
+where status = 'error'
+  and critical = true
+          )
+        
+        ...
+[0m16:29:51.014782 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.17 seconds
+[0m16:29:51.019026 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.trace_drilldown_candidates_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.trace_drilldown_candidates_1h"} */
+
+    select name, type from system.columns where table = 'trace_drilldown_candidates_1h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:29:51.166425 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.15 seconds
+[0m16:29:51.170206 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.trace_drilldown_candidates_1h"
+[0m16:29:51.188146 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.trace_drilldown_candidates_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.trace_drilldown_candidates_1h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`trace_drilldown_candidates_1h__dbt_backup`
+        ("trace_id", "ts", "name", "char_id", "status")
+
+select distinct
+    trace_id,
+    ts,
+    name,
+    char_id,
+    status
+from `default`.`stg_obs_spans`
+where status = 'error'
+  and critical = true
+  ...
+[0m16:29:51.304608 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:29:51.307736 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.trace_drilldown_candidates_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.trace_drilldown_candidates_1h"} */
+EXCHANGE TABLES `default`.`trace_drilldown_candidates_1h__dbt_backup` AND `default`.`trace_drilldown_candidates_1h` 
+  
+  ...
+[0m16:29:51.450556 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.14 seconds
+[0m16:29:51.455892 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.trace_drilldown_candidates_1h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.trace_drilldown_candidates_1h"} */
+drop table if exists `default`.`trace_drilldown_candidates_1h__dbt_backup` 
+  ...
+[0m16:29:51.586114 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.13 seconds
+[0m16:29:51.589034 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3e831355-3653-46ac-9288-816144264cc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b29115440d0>]}
+[0m16:29:51.590508 [info ] [Thread-1 (]: 16 of 16 OK created sql table model `default`.`trace_drilldown_candidates_1h` .. [[32mOK[0m in 0.78s]
+[0m16:29:51.592983 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.trace_drilldown_candidates_1h
+[0m16:29:51.596207 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:29:51.597635 [debug] [MainThread]: Connection 'model.silkroad_observability.trace_drilldown_candidates_1h' was left open.
+[0m16:29:51.598953 [debug] [MainThread]: On model.silkroad_observability.trace_drilldown_candidates_1h: Close
+[0m16:29:51.600386 [info ] [MainThread]: 
+[0m16:29:51.601978 [info ] [MainThread]: Finished running 14 table models, 2 view models in 0 hours 0 minutes and 11.05 seconds (11.05s).
+[0m16:29:51.606271 [debug] [MainThread]: Command end result
+[0m16:29:51.737052 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/target/manifest.json
+[0m16:29:51.743301 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/target/semantic_manifest.json
+[0m16:29:51.766405 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/target/run_results.json
+[0m16:29:51.767683 [info ] [MainThread]: 
+[0m16:29:51.769588 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:29:51.771342 [info ] [MainThread]: 
+[0m16:29:51.773516 [info ] [MainThread]: Done. PASS=16 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=16
+[0m16:29:51.780913 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 13.7421, "process_in_blocks": "24", "process_kernel_time": 0.613936, "process_mem_max_rss": "151960", "process_out_blocks": "0", "process_user_time": 3.759411}
+[0m16:29:51.782770 [debug] [MainThread]: Command `dbt run` succeeded at 16:29:51.782599 after 13.74 seconds
+[0m16:29:51.784047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293a76f690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293a76f390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b293f0dd5d0>]}
+[0m16:29:51.785769 [debug] [MainThread]: Flushing usage events
+[0m16:29:52.756257 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:34:41.365407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7001143c7850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7001144c7c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7001144c5610>]}
+
+
+============================== 16:34:41.373612 | 087a9578-0600-45e6-a81b-ff390b198d02 ==============================
+[0m16:34:41.373612 [info ] [MainThread]: Running with dbt=1.11.7
+[0m16:34:41.378448 [debug] [MainThread]: running dbt with arguments {'log_path': '/usr/app/logs', 'partial_parse': 'True', 'cache_selected_only': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'introspect': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'no_print': 'None', 'target_path': 'None', 'static_parser': 'True', 'quiet': 'False', 'debug': 'False', 'profiles_dir': '/usr/app', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'version_check': 'True', 'write_json': 'True', 'invocation_command': 'dbt run --select list_exchange_characters_24h', 'printer_width': '80'}
+[0m16:34:41.666369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '087a9578-0600-45e6-a81b-ff390b198d02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7001141b9f50>]}
+[0m16:34:41.746309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '087a9578-0600-45e6-a81b-ff390b198d02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700114aa0e10>]}
+[0m16:34:41.748687 [info ] [MainThread]: Registered adapter: clickhouse=1.9.8
+[0m16:34:41.842414 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m16:34:42.150349 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:34:42.152001 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:34:42.153262 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:34:42.198274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '087a9578-0600-45e6-a81b-ff390b198d02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700113f04410>]}
+[0m16:34:42.332663 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/target/manifest.json
+[0m16:34:42.339838 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/target/semantic_manifest.json
+[0m16:34:42.438587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '087a9578-0600-45e6-a81b-ff390b198d02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700113e9d8d0>]}
+[0m16:34:42.440896 [info ] [MainThread]: Found 16 models, 2 sources, 486 macros
+[0m16:34:42.443357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '087a9578-0600-45e6-a81b-ff390b198d02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7001158add50>]}
+[0m16:34:42.446918 [info ] [MainThread]: 
+[0m16:34:42.449290 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:34:42.451298 [info ] [MainThread]: 
+[0m16:34:42.453686 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m16:34:42.456228 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m16:34:42.473993 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:34:43.594141 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m16:34:43.716960 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:34:43.757373 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__default)
+[0m16:34:43.765383 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__default: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "connection_name": "list__default"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'default'
+      
+
+  ...
+[0m16:34:43.873698 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:34:43.878415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '087a9578-0600-45e6-a81b-ff390b198d02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700111db8ad0>]}
+[0m16:34:43.882933 [debug] [Thread-1 (]: Began running node model.silkroad_observability.list_exchange_characters_24h
+[0m16:34:43.885001 [info ] [Thread-1 (]: 1 of 1 START sql table model `default`.`list_exchange_characters_24h` .......... [RUN]
+[0m16:34:43.886482 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__default, now model.silkroad_observability.list_exchange_characters_24h)
+[0m16:34:43.887693 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.list_exchange_characters_24h
+[0m16:34:43.894613 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.list_exchange_characters_24h"
+[0m16:34:43.901598 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.list_exchange_characters_24h
+[0m16:34:43.959300 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+
+            
+
+    
+        create table `default`.`list_exchange_characters_24h__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    char_id,
+    countIf(name = 'exchange_start_ok') as trades_started,
+    countIf(name = 'exchange_confirm_ok') as trades_confirmed,
+    countIf(
+        name = 'exchange_approve_ok'
+        and JSONExtractBool(attrs, 'completed') = true
+    ) as trades_completed,
+    max(ts) as last_exchange_at
+from `default`.`stg_obs_spans`
+where name like 'exchange_%'
+group by char_id
+having trades_started > 0
+order by trades_completed desc, trades_started desc, char_id asc
+          )
+        
+        ...
+[0m16:34:43.908832 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in -0.05 seconds
+[0m16:34:43.931580 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+
+    select name, type from system.columns where table = 'list_exchange_characters_24h__dbt_backup'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:34:44.037344 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:34:44.043028 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.list_exchange_characters_24h"
+[0m16:34:44.053462 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`list_exchange_characters_24h__dbt_backup`
+        ("char_id", "trades_started", "trades_confirmed", "trades_completed", "last_exchange_at")
+
+select
+    char_id,
+    countIf(name = 'exchange_start_ok') as trades_started,
+    countIf(name = 'exchange_confirm_ok') as trades_confirmed,
+    countIf(
+        name = 'exchange_approve_ok'
+        and JSONExtractBool(attrs, 'completed') = true
+    ) as trades_completed,
+    max(ts) as last_exchange_at
+from `default`.`stg_obs_spans`
+where name like 'exchange_%'
+group by char_id
+having trades_started > 0
+order by trades_completed desc, trades_started desc, char_id asc
+  ...
+[0m16:34:44.212993 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.16 seconds
+[0m16:34:44.222590 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+EXCHANGE TABLES `default`.`list_exchange_characters_24h__dbt_backup` AND `default`.`list_exchange_characters_24h` 
+  
+  ...
+[0m16:34:44.340243 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.11 seconds
+[0m16:34:44.380630 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_characters_24h: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_characters_24h"} */
+drop table if exists `default`.`list_exchange_characters_24h__dbt_backup` 
+  ...
+[0m16:34:44.485504 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.10 seconds
+[0m16:34:44.490025 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '087a9578-0600-45e6-a81b-ff390b198d02', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700114181050>]}
+[0m16:34:44.492004 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `default`.`list_exchange_characters_24h` ..... [[32mOK[0m in 0.60s]
+[0m16:34:44.493852 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.list_exchange_characters_24h
+[0m16:34:44.496861 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:34:44.498623 [debug] [MainThread]: Connection 'model.silkroad_observability.list_exchange_characters_24h' was left open.
+[0m16:34:44.499921 [debug] [MainThread]: On model.silkroad_observability.list_exchange_characters_24h: Close
+[0m16:34:44.501387 [info ] [MainThread]: 
+[0m16:34:44.503098 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.05 seconds (2.05s).
+[0m16:34:44.505680 [debug] [MainThread]: Command end result
+[0m16:34:44.547973 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/target/manifest.json
+[0m16:34:44.555687 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/target/semantic_manifest.json
+[0m16:34:44.564842 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/target/run_results.json
+[0m16:34:44.566073 [info ] [MainThread]: 
+[0m16:34:44.568006 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:34:44.569664 [info ] [MainThread]: 
+[0m16:34:44.571332 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:34:44.573964 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.8102238, "process_in_blocks": "40", "process_kernel_time": 0.434405, "process_mem_max_rss": "147216", "process_out_blocks": "0", "process_user_time": 3.308164}
+[0m16:34:44.575689 [debug] [MainThread]: Command `dbt run` succeeded at 16:34:44.575511 after 3.81 seconds
+[0m16:34:44.576917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7001144c7c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7001144c5610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x700118e3d2d0>]}
+[0m16:34:44.578242 [debug] [MainThread]: Flushing usage events
+[0m16:34:45.384672 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:40:24.188745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d08566e7b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d08566e7fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d08566e4250>]}
+
+
+============================== 16:40:24.197576 | 514c9d6e-b0ab-4622-895d-30b71aff1f9c ==============================
+[0m16:40:24.197576 [info ] [MainThread]: Running with dbt=1.11.7
+[0m16:40:24.199445 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select list_exchange_events', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'printer_width': '80', 'no_print': 'None', 'debug': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'quiet': 'False', 'version_check': 'True', 'profiles_dir': '/usr/app', 'log_path': '/usr/app/logs', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'empty': 'False', 'introspect': 'True', 'static_parser': 'True', 'cache_selected_only': 'False'}
+[0m16:40:24.462434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '514c9d6e-b0ab-4622-895d-30b71aff1f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d08564b4090>]}
+[0m16:40:24.532733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '514c9d6e-b0ab-4622-895d-30b71aff1f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0856427750>]}
+[0m16:40:24.535299 [info ] [MainThread]: Registered adapter: clickhouse=1.9.8
+[0m16:40:24.616369 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m16:40:24.905596 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m16:40:24.907790 [debug] [MainThread]: Partial parsing: added file: silkroad_observability://models/marts/list_exchange_events.sql
+[0m16:40:24.909829 [debug] [MainThread]: Partial parsing: updated file: silkroad_observability://models/marts/lightdash_metrics.yml
+[0m16:40:24.923570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '514c9d6e-b0ab-4622-895d-30b71aff1f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d08563822d0>]}
+[0m16:40:25.022091 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/target/manifest.json
+[0m16:40:25.028911 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/target/semantic_manifest.json
+[0m16:40:25.061280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '514c9d6e-b0ab-4622-895d-30b71aff1f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0854cd3ed0>]}
+[0m16:40:25.063099 [info ] [MainThread]: Found 17 models, 2 sources, 486 macros
+[0m16:40:25.065913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '514c9d6e-b0ab-4622-895d-30b71aff1f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d08560f5d10>]}
+[0m16:40:25.069226 [info ] [MainThread]: 
+[0m16:40:25.071190 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:40:25.072975 [info ] [MainThread]: 
+[0m16:40:25.075356 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m16:40:25.077967 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m16:40:25.090231 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:40:26.653955 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m16:40:26.774909 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:40:26.816406 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__default)
+[0m16:40:26.825883 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__default: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "connection_name": "list__default"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'default'
+      
+
+  ...
+[0m16:40:26.955418 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.13 seconds
+[0m16:40:26.961627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '514c9d6e-b0ab-4622-895d-30b71aff1f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0854e5c250>]}
+[0m16:40:26.967416 [debug] [Thread-1 (]: Began running node model.silkroad_observability.list_exchange_events
+[0m16:40:26.969142 [info ] [Thread-1 (]: 1 of 1 START sql table model `default`.`list_exchange_events` .................. [RUN]
+[0m16:40:26.971004 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__default, now model.silkroad_observability.list_exchange_events)
+[0m16:40:26.972569 [debug] [Thread-1 (]: Began compiling node model.silkroad_observability.list_exchange_events
+[0m16:40:26.980793 [debug] [Thread-1 (]: Writing injected SQL for node "model.silkroad_observability.list_exchange_events"
+[0m16:40:26.990055 [debug] [Thread-1 (]: Began executing node model.silkroad_observability.list_exchange_events
+[0m16:40:27.014218 [debug] [Thread-1 (]: Creating new relation list_exchange_events
+[0m16:40:27.062087 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_events: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_events"} */
+
+            
+
+    
+        create table `default`.`list_exchange_events`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS replicated_deduplication_window='0'
+
+                    
+            empty
+          as (
+            
+
+select
+    ts,
+    trace_id,
+    span_id,
+    char_id,
+    account_id,
+    name as exchange_event,
+    status,
+    request_kind,
+    result_code,
+    JSONExtractBool(attrs, 'completed') as completed,
+    JSONExtractString(attrs, 'reason') as fail_reason,
+    JSONExtractString(attrs, 'code') as fail_code
+from `default`.`stg_obs_spans`
+where name like 'exchange_%'
+order by ts desc
+          )
+        
+        ...
+[0m16:40:27.226312 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.16 seconds
+[0m16:40:27.258421 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_events: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_events"} */
+
+    select name, type from system.columns where table = 'list_exchange_events'
+    
+      
+        and database = 'default'
+      
+    
+    order by position
+  ...
+[0m16:40:27.378585 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.12 seconds
+[0m16:40:27.384278 [debug] [Thread-1 (]: Writing runtime sql for node "model.silkroad_observability.list_exchange_events"
+[0m16:40:27.393114 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.silkroad_observability.list_exchange_events: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "silkroad_observability", "target_name": "dev", "node_id": "model.silkroad_observability.list_exchange_events"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `default`.`list_exchange_events`
+        ("ts", "trace_id", "span_id", "char_id", "account_id", "exchange_event", "status", "request_kind", "result_code", "completed", "fail_reason", "fail_code")
+
+select
+    ts,
+    trace_id,
+    span_id,
+    char_id,
+    account_id,
+    name as exchange_event,
+    status,
+    request_kind,
+    result_code,
+    JSONExtractBool(attrs, 'completed') as completed,
+    JSONExtractString(attrs, 'reason') as fail_reason,
+    JSONExtractString(attrs, 'code') as fail_code
+from `default`.`stg_obs_spans`
+where name like 'exchange_%'
+order by ts desc
+  ...
+[0m16:40:27.531432 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.14 seconds
+[0m16:40:27.550933 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '514c9d6e-b0ab-4622-895d-30b71aff1f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d082ed2f790>]}
+[0m16:40:27.552908 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `default`.`list_exchange_events` ............. [[32mOK[0m in 0.58s]
+[0m16:40:27.554825 [debug] [Thread-1 (]: Finished running node model.silkroad_observability.list_exchange_events
+[0m16:40:27.557475 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:40:27.558778 [debug] [MainThread]: Connection 'model.silkroad_observability.list_exchange_events' was left open.
+[0m16:40:27.561098 [debug] [MainThread]: On model.silkroad_observability.list_exchange_events: Close
+[0m16:40:27.562929 [info ] [MainThread]: 
+[0m16:40:27.564841 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.49 seconds (2.49s).
+[0m16:40:27.566924 [debug] [MainThread]: Command end result
+[0m16:40:27.612642 [debug] [MainThread]: Wrote artifact WritableManifest to /usr/app/target/manifest.json
+[0m16:40:27.619851 [debug] [MainThread]: Wrote artifact SemanticManifest to /usr/app/target/semantic_manifest.json
+[0m16:40:27.629448 [debug] [MainThread]: Wrote artifact RunExecutionResult to /usr/app/target/run_results.json
+[0m16:40:27.630923 [info ] [MainThread]: 
+[0m16:40:27.632640 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:40:27.634733 [info ] [MainThread]: 
+[0m16:40:27.636598 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:40:27.639278 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.04614, "process_in_blocks": "0", "process_kernel_time": 0.430707, "process_mem_max_rss": "151096", "process_out_blocks": "0", "process_user_time": 3.232148}
+[0m16:40:27.641106 [debug] [MainThread]: Command `dbt run` succeeded at 16:40:27.640850 after 4.05 seconds
+[0m16:40:27.642607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d08566e73d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d085b09fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d085682c610>]}
+[0m16:40:27.644208 [debug] [MainThread]: Flushing usage events
+[0m16:40:28.422681 [debug] [MainThread]: An error was encountered while trying to flush usage events

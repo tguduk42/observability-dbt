@@ -19,6 +19,5 @@ select
     result_code,
     attrs
 from `default`.`stg_obs_spans`
-where ts >= now() - INTERVAL 30 MINUTE
-  and critical = true
+where critical = true
   

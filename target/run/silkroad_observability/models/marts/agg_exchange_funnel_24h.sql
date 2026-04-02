@@ -18,5 +18,4 @@ select
     countIf(name like 'exchange_%_fail'
          or name = 'exchange_cancel_ok') as cancelled
 from `default`.`stg_obs_events`
-where ts >= now() - INTERVAL 24 HOUR
   

@@ -10,5 +10,4 @@ select
     err_class,
     attrs
 from `default`.`stg_obs_spans`
-where ts >= now() - INTERVAL 2 HOUR
-  and char_id > 0
+where char_id > 0
