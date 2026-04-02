@@ -181,3 +181,24 @@ models:
           metrics:
             avg_handler_ms_metric:
               type: average
+
+  - name: list_exchange_characters_24h
+    description: "Son 24 saat exchange aktivitesi olan karakter listesi"
+    columns:
+      - name: char_id
+      - name: trades_started
+        meta:
+          metrics:
+            trades_started_total:
+              type: sum
+      - name: trades_confirmed
+        meta:
+          metrics:
+            trades_confirmed_total:
+              type: sum
+      - name: trades_completed
+        meta:
+          metrics:
+            trades_completed_total_24h:
+              type: sum
+      - name: last_exchange_at
