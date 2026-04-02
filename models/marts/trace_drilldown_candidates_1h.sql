@@ -7,6 +7,5 @@ select distinct
     char_id,
     status
 from {{ ref('stg_obs_spans') }}
-where ts >= now() - INTERVAL 1 HOUR
-  and status = 'error'
+where status = 'error'
   and critical = true

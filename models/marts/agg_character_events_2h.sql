@@ -8,5 +8,4 @@ select
     e.attrs
 from {{ ref('stg_obs_events') }} e
 inner join {{ ref('stg_obs_spans') }} s on s.span_id = e.span_id
-where e.ts >= now() - INTERVAL 2 HOUR
-  and s.char_id > 0
+where s.char_id > 0

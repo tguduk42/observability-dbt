@@ -9,5 +9,4 @@ select
     result_code,
     attrs
 from {{ ref('stg_obs_spans') }}
-where ts >= now() - INTERVAL 30 MINUTE
-  and critical = true
+where critical = true

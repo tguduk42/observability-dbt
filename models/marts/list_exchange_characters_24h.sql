@@ -10,8 +10,7 @@ select
     ) as trades_completed,
     max(ts) as last_exchange_at
 from {{ ref('stg_obs_spans') }}
-where ts >= now() - INTERVAL 24 HOUR
-  and name like 'exchange_%'
+where name like 'exchange_%'
 group by char_id
 having trades_started > 0
 order by trades_completed desc, trades_started desc, char_id asc

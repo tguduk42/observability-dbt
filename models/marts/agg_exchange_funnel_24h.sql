@@ -8,4 +8,3 @@ select
     countIf(name like 'exchange_%_fail'
          or name = 'exchange_cancel_ok') as cancelled
 from {{ ref('stg_obs_events') }}
-where ts >= now() - INTERVAL 24 HOUR
