@@ -202,3 +202,19 @@ models:
             trades_completed_total_24h:
               type: sum
       - name: last_exchange_at
+
+  - name: list_exchange_events
+    description: "Exchange event detay listesi"
+    columns:
+      - name: ts
+      - name: trace_id
+      - name: span_id
+      - name: char_id
+      - name: account_id
+      - name: exchange_event
+      - name: status
+      - name: request_kind
+      - name: result_code
+      - name: completed
+      - name: fail_reason
+      - name: fail_code
