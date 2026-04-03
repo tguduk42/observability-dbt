@@ -7,7 +7,7 @@
          
 
 
-        insert into `default`.`list_exchange_events`
+        insert into `default`.`list_exchange_events__dbt_backup`
         ("ts", "trace_id", "span_id", "char_id", "account_id", "exchange_event", "status", "request_kind", "result_code", "completed", "fail_reason", "fail_code")
 
 select

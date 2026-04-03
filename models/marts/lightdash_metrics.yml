@@ -1,6 +1,43 @@
 version: 2
 
 models:
+  - name: agg_character_activity_2h
+    description: "Karakter bazli aktivite detaylari"
+    columns:
+      - name: ts
+      - name: char_id
+      - name: name
+      - name: request_kind
+      - name: status
+      - name: duration_ms
+        meta:
+          metrics:
+            avg_duration_ms_activity:
+              type: average
+            max_duration_ms_activity:
+              type: max
+      - name: err_class
+      - name: attrs
+
+  - name: agg_character_events_2h
+    description: "Karakter event detaylari"
+    columns:
+      - name: ts
+      - name: char_id
+      - name: name
+      - name: level
+      - name: attrs
+
+  - name: agg_error_class_today
+    description: "Error class toplamlari"
+    columns:
+      - name: err_class
+      - name: total
+        meta:
+          metrics:
+            total_errors_by_class:
+              type: sum
+
   - name: agg_error_summary_1h
     description: "Son 1 saat hata özeti"
     columns:
@@ -218,3 +255,52 @@ models:
       - name: completed
       - name: fail_reason
       - name: fail_code
+
+  - name: stg_obs_events
+    description: "Ham event staging modeli"
+    columns:
+      - name: ts
+      - name: event_date
+      - name: event_hour
+      - name: trace_id
+      - name: span_id
+      - name: name
+      - name: level
+      - name: attrs
+
+  - name: stg_obs_spans
+    description: "Ham span staging modeli"
+    columns:
+      - name: ts
+      - name: event_date
+      - name: event_hour
+      - name: event_minute
+      - name: event_15m
+      - name: trace_id
+      - name: span_id
+      - name: parent_span_id
+      - name: name
+      - name: request_kind
+      - name: status
+      - name: duration_ms
+        meta:
+          metrics:
+            avg_duration_ms_span:
+              type: average
+            max_duration_ms_span:
+              type: max
+      - name: err_class
+      - name: critical
+      - name: char_id
+      - name: account_id
+      - name: result_code
+      - name: attrs
+
+  - name: trace_drilldown_candidates_1h
+    description: "Hata ve kritik trace drilldown adaylari"
+    columns:
+      - name: trace_id
+      - name: ts
+      - name: name
+      - name: char_id
+      - name: status
